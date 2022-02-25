@@ -1,4 +1,10 @@
-﻿export default [
+export default [
+  {
+    name: 'Welcome',
+    icon: 'smile',
+    path: '/welcome',
+    component: './Welcome',
+  },
   {
     path: '/user',
     layout: false,
@@ -19,10 +25,10 @@
     ],
   },
   {
-    path: '/welcome',
-    name: 'welcome',
+    path: '/main',
+    name: 'main',
     icon: 'smile',
-    component: './Welcome',
+    component: './Main',
   },
   {
     path: '/admin',
@@ -35,7 +41,7 @@
         path: '/admin/sub-page',
         name: 'sub-page',
         icon: 'smile',
-        component: './Welcome',
+        component: './Main',
       },
       {
         component: './404',
@@ -50,7 +56,7 @@
   },
   {
     path: '/',
-    redirect: '/welcome',
+    redirect: '/main',
   },
   {
     component: './404',

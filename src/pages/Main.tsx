@@ -2,7 +2,7 @@ import React from 'react';
 import { PageContainer } from '@ant-design/pro-layout';
 import { Card, Alert, Typography } from 'antd';
 import { useIntl, FormattedMessage } from 'umi';
-import styles from './Welcome.less';
+import styles from './Main.less';
 
 const CodePreview: React.FC = ({ children }) => (
   <pre className={styles.pre}>
@@ -12,7 +12,7 @@ const CodePreview: React.FC = ({ children }) => (
   </pre>
 );
 
-const Welcome: React.FC = () => {
+const Main: React.FC = () => {
   const intl = useIntl();
 
   return (
@@ -63,4 +63,4 @@ const Welcome: React.FC = () => {
   );
 };
 
-export default Welcome;
+export default Main;
