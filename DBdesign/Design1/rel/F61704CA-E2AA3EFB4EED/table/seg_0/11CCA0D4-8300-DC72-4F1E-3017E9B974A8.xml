@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11CCA0D4-8300-DC72-4F1E-3017E9B974A8" name="USER">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<comment><![CDATA[User Profile stored in Firestore NoSQL]]></comment>
+<generatorID>55A742E5-9188-8569-16F9-A3FEFEFFAF1E</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<abbreviation>USER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UID" id="59590276-8919-EAFF-0D87-13386C16D7E0">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>D601D5C7-B367-5E90-74DD-FB466A1B11FF</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UFNAME" id="A3ED7D6B-D51C-BB62-922D-32CDBB4A0BF8">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[User's first name]]></commentInRDBMS>
+<generatorID>3AA5BCB3-0409-E290-9A69-CFACD41BEF5E</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ULNAME" id="BA7BFBAE-EFBF-9C71-CCE1-74B6D46F2DF2">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[User's last name]]></commentInRDBMS>
+<generatorID>504DC9F4-9196-9853-CF9C-2C7250E8D705</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USEX" id="97C0B24A-A642-04B8-9EFA-A30B4718A4A1">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Male - 1 Female 0]]></commentInRDBMS>
+<generatorID>264393DC-9A2A-AB22-3702-A6FBB0C6E768</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UEMAIL" id="DB771551-4A88-14A3-D3B0-39CCB47B67CE">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>37D9474A-83A2-78E0-DF63-E68961571C22</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UTYPE" id="CBD19AC0-07FE-7D01-41A6-17A255FAE2CA">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[0 - Super Admin
+1 - Warehouse Admin
+2 - Regional Admin
+1 - general user
+... TODO]]></commentInRDBMS>
+<generatorID>291B9472-6131-7192-B65E-82C8F39C7F2C</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7804A8ED-1750-6C31-0E47-E280F5F52261" name="USER_PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>0E2EEB05-348F-68DF-5837-479D1AD9FA32</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59590276-8919-EAFF-0D87-13386C16D7E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

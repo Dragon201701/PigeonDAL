@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7C2B2869-C268-DB59-91D9-BCEFD9D94DFF" containerWithKeyObject="FF755CED-23FF-88F9-AA1D-67F56EC9820F" localFKIndex="099A6B5B-1D2C-8CE5-2B7C-91F469565B36" name="BATCH_SHIPMENT_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>BA49B1D8-FC9A-4E12-3273-A1EB47A2676A</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<referredTableLongName>SHIPMENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D93A7DA7-BDB2-2949-0444-3046FC95C76D</referredTableID>
+<keyObject>30DF8D55-8B61-B638-DE74-EF2DFB8999A8</keyObject>
+<referredKeyID>30DF8D55-8B61-B638-DE74-EF2DFB8999A8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

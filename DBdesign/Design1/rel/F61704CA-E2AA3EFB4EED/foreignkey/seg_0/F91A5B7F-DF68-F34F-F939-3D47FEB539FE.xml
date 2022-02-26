@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F91A5B7F-DF68-F34F-F939-3D47FEB539FE" containerWithKeyObject="AB6EEA7A-FD05-AFEA-ACC5-DFC4D8B1904B" localFKIndex="205CF910-355E-499E-C9E9-699C2C661FA4" name="REQUEST_USER_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<comment><![CDATA[User can request multiple different kinds of supplies]]></comment>
+<generatorID>D8A0B3C2-9FB5-5609-A915-7006EEEFD590</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<referredTableLongName>USER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11CCA0D4-8300-DC72-4F1E-3017E9B974A8</referredTableID>
+<keyObject>7804A8ED-1750-6C31-0E47-E280F5F52261</keyObject>
+<referredKeyID>7804A8ED-1750-6C31-0E47-E280F5F52261</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>UID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

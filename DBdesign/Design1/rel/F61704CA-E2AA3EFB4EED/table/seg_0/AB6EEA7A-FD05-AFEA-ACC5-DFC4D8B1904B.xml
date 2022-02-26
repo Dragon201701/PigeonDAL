@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB6EEA7A-FD05-AFEA-ACC5-DFC4D8B1904B" name="REQUEST">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>82DC2FC1-FA74-218B-D594-7678CBA43740</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<abbreviation>REQUEST</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RID" id="2D1C9952-7C2C-0C07-3DD4-FFE88C3FBD9C">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Request ID]]></commentInRDBMS>
+<generatorID>31480012-7246-497D-2E45-266951E49906</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RPID" id="80DD3970-BC65-A172-F5C6-F906C51EECB1">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Request product type, ArrayList]]></commentInRDBMS>
+<generatorID>76C75074-48BA-285F-18FE-D59E2175F099</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_UID" id="BCF52B76-7EB9-A89F-B89B-435639C2B347">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>B2699362-08AB-7FDB-BA51-454379986AD4</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F91A5B7F-DF68-F34F-F939-3D47FEB539FE" referredColumn="59590276-8919-EAFF-0D87-13386C16D7E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEB2D126-226A-47A9-802D-EAC29495CBD2" name="REQUEST_PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>B23BAE2A-B0ED-FD01-8675-992B3603064F</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D1C9952-7C2C-0C07-3DD4-FFE88C3FBD9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="205CF910-355E-499E-C9E9-699C2C661FA4" name="REQUEST_USER_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>D8A0B3C2-9FB5-5609-A915-7006EEEFD590</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCF52B76-7EB9-A89F-B89B-435639C2B347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

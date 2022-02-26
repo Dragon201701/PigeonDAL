@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1E1F3CC-6BBB-556B-D644-9582AA4E3838" name="MANUFACTURER_PRODUCT">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MANUFACTURER_MID" id="5F98B9D9-801D-AE78-43BD-9B11B7C8362B">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA81005B-D741-D2DA-6BD6-18D3F4289D71" referredColumn="DF876874-A1CB-4575-BBED-82D8FDBF164C"/>
+</associations>
+</Column>
+<Column name="PRODUCT_PID" id="B0E690D3-4546-630F-3CC4-621E838B6859">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E931EB4-FD6B-2898-87B0-99727D29A474" referredColumn="C0CAB66C-254E-2296-5B72-135367855E7E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F104547-A1D2-A3A7-2A43-10DA275BA477" name="MANUFACTURER_PRODUCT_PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F98B9D9-801D-AE78-43BD-9B11B7C8362B"/>
+<colUsage columnID="B0E690D3-4546-630F-3CC4-621E838B6859"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8526029-4F0B-65BD-5327-BFEA49E85596" name="MANUFACTURER_PRODUCT_MANUFACTURER_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>9A6D67AA-572A-91D4-8AB1-DD5DB67D89B4</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F98B9D9-801D-AE78-43BD-9B11B7C8362B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="865CFDD0-B90E-CCB2-009E-0AF7FD91ABCB" name="MANUFACTURER_PRODUCT_PRODUCT_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>9A6D67AA-572A-91D4-8AB1-DD5DB67D89B4</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0E690D3-4546-630F-3CC4-621E838B6859"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

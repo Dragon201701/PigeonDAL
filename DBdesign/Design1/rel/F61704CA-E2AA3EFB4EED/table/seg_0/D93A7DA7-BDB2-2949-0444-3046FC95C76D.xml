@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D93A7DA7-BDB2-2949-0444-3046FC95C76D" name="SHIPMENT">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<comment><![CDATA[Each shipment can contain multiple ]]></comment>
+<generatorID>B3DC3BAA-7A55-B4D3-D17A-22821B000795</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<abbreviation>SHIPMENT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SID" id="95176A6B-58BE-C5B2-A6B6-0928EAC6E4BC">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Shipment/Package ID.]]></commentInRDBMS>
+<generatorID>FFAFB35B-CF7A-42D9-970E-3C1005C003B5</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STYPE" id="E3A03C36-AFFD-E33D-0FAD-82259B06DF48">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[0 - Ground
+1 - Air
+2 - Sea]]></commentInRDBMS>
+<generatorID>6B24DA75-7FAF-B03D-A2C8-AEC377D0644F</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30DF8D55-8B61-B638-DE74-EF2DFB8999A8" name="SHIPMENT_PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>AD8EF5FA-D545-CD70-211F-B786DF129F1F</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95176A6B-58BE-C5B2-A6B6-0928EAC6E4BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

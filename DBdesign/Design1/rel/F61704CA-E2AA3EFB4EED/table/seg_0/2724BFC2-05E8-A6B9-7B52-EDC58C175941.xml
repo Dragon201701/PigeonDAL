@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2724BFC2-05E8-A6B9-7B52-EDC58C175941" name="DONATIONS">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Donations, stored in Firestore]]></commentInRDBMS>
+<generatorID>C5566A24-1911-0040-F900-C0FC48F964D0</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<abbreviation>DONATIONS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DID" id="C846B34E-1E15-8A35-0539-D463C9ED418C">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Donations ID]]></commentInRDBMS>
+<generatorID>543FA56E-73B3-9259-BECB-A9C6A2D44BEB</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DTOTAL" id="F7A91D73-FEB2-A6AE-1DD0-5A6BAD5F9F79">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total number]]></commentInRDBMS>
+<generatorID>A7224974-ABDE-BC1B-1173-8A596C29E30E</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DMIN" id="CF60C004-557D-2EEB-AAFD-9F35497E5FD9">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The smallest number this supply can be divided into. E.g. 1000 masks are packed into smaller packets each contains 10 masks. MUST > 0 and is a divisible of total number.]]></commentInRDBMS>
+<generatorID>C7D64986-A243-E0D7-565F-4BAF2EDD9AB0</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_UID" id="F86B5158-CA62-D979-74C2-07B567FC7BF3">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>D6EAC488-65F9-96B3-D1F4-02FC294E1798</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A5725D9-FD99-6ADC-E53A-521E6EAB2E8C" referredColumn="59590276-8919-EAFF-0D87-13386C16D7E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EAA2553-40BB-DFD6-4B45-660156FD7B43" name="DONATIONS_PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>ADFF23F1-BCA0-46C5-F67B-B885F970BE87</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C846B34E-1E15-8A35-0539-D463C9ED418C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D67D705-692C-D404-77A9-37CDE1DD022F" name="DONATIONS_USER_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>62A23836-3969-D79E-BC25-17C30348D57D</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F86B5158-CA62-D979-74C2-07B567FC7BF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

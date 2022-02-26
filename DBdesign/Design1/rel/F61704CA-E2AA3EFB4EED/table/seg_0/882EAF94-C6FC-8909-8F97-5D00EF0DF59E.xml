@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="882EAF94-C6FC-8909-8F97-5D00EF0DF59E" name="PRODUCT">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>4CADA9D9-5B3D-C74F-EE70-2BA79636FC50</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<abbreviation>PRODUCT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PID" id="C0CAB66C-254E-2296-5B72-135367855E7E">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>539BE092-5922-44E9-A5B5-4B1965FC7843</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PNAME" id="FC22CAEA-AACC-25CC-8B8D-7BB74A1A2FD9">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product name]]></commentInRDBMS>
+<generatorID>6D077624-9E6E-F904-F300-EF7924EDD648</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REQUEST_RID" id="509C8BCD-153E-D467-12FC-EC0BF69BC2D3">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>80DFAAB5-DB71-8C78-6BB8-E405DE6746FC</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="562A9385-3DC3-4D73-033F-DA79F302E95C" referredColumn="2D1C9952-7C2C-0C07-3DD4-FFE88C3FBD9C"/>
+</associations>
+</Column>
+<Column name="RPTOTAL" id="87063B9F-B56C-EA13-27CB-5A94EC871835">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<comment><![CDATA[Total number of products requested.]]></comment>
+<generatorID>CF5BA6D2-13AD-EEA6-F22A-8D9C7F6B0DB4</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>562A9385-3DC3-4D73-033F-DA79F302E95C</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="486BA4CB-4393-5D92-5D81-3B7AD22348F4" name="PRODUCT_PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>E29454D4-61A6-ECC1-18A2-54A4839C91F1</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0CAB66C-254E-2296-5B72-135367855E7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67A41A54-EE1C-CB86-D3D1-BFD5E1C15E17" name="PRODUCT_REQUEST_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<generatorID>60E94849-31ED-B589-FB3D-34F593DF06CF</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="509C8BCD-153E-D467-12FC-EC0BF69BC2D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

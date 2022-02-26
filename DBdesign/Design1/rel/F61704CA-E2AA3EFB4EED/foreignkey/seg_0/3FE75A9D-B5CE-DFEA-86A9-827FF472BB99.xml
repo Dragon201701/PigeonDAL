@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3FE75A9D-B5CE-DFEA-86A9-827FF472BB99" containerWithKeyObject="FF755CED-23FF-88F9-AA1D-67F56EC9820F" localFKIndex="A1BCB809-12BB-8C53-A407-292B90730FA3" name="BATCH_REQUEST_FK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:59:23 UTC</createdTime>
+<comment><![CDATA[Multiple batch can directed to the request.]]></comment>
+<generatorID>A4F177CB-C0B2-106C-F4FB-E6DFBA7AC16D</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<referredTableLongName>REQUEST</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AB6EEA7A-FD05-AFEA-ACC5-DFC4D8B1904B</referredTableID>
+<keyObject>CEB2D126-226A-47A9-802D-EAC29495CBD2</keyObject>
+<referredKeyID>CEB2D126-226A-47A9-802D-EAC29495CBD2</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>RID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
