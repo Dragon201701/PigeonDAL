@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A289FF41-BAE3-253F-E03D-689EAE1D1A3B" name="MANUFACTURER">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:12:55 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>MANUFACTURER</preferredAbbreviation>
+<shortName>MANUFACTURER</shortName>
+<synonym>MANUFACTURER</synonym>
+<synonymToDisplay>MANUFACTURER</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MID" id="556C4DBD-6F37-AC42-3217-82662F5100B7">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:00:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manufacturer ID]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MNAME" id="EC1C6AE9-4243-80E5-2A51-E17EAF77EB00">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:13:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manufacturer NAME]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E3496C2-2BF9-ADAD-93FB-9DA74E7E9AB9" name="MANUFACTURER PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:15:05 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>556C4DBD-6F37-AC42-3217-82662F5100B7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

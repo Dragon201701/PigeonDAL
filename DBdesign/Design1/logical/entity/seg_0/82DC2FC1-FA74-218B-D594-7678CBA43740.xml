@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82DC2FC1-FA74-218B-D594-7678CBA43740" name="REQUEST">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:44:36 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>REQUEST</preferredAbbreviation>
+<shortName>REQUEST</shortName>
+<synonym>REQUEST</synonym>
+<synonymToDisplay>REQUEST</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RID" id="31480012-7246-497D-2E45-266951E49906">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:45:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Request ID]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RPID" id="76C75074-48BA-285F-18FE-D59E2175F099">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:48:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Request product type, ArrayList]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UID" id="B2699362-08AB-7FDB-BA51-454379986AD4">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:52:14 UTC</createdTime>
+<generatorID>D8A0B3C2-9FB5-5609-A915-7006EEEFD590</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D601D5C7-B367-5E90-74DD-FB466A1B11FF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B23BAE2A-B0ED-FD01-8675-992B3603064F" name="REQUEST PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:50:17 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>31480012-7246-497D-2E45-266951E49906</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

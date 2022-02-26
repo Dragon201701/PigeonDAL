@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C5566A24-1911-0040-F900-C0FC48F964D0" name="DONATIONS">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:05:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Donations, stored in Firestore]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>DONATIONS</preferredAbbreviation>
+<shortName>DONATIONS</shortName>
+<synonym>DONATIONS</synonym>
+<synonymToDisplay>DONATIONS</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DID" id="543FA56E-73B3-9259-BECB-A9C6A2D44BEB">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:05:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Donations ID]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DTOTAL" id="A7224974-ABDE-BC1B-1173-8A596C29E30E">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:09:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total number]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DMIN" id="C7D64986-A243-E0D7-565F-4BAF2EDD9AB0">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:10:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[The smallest number this supply can be divided into. E.g. 1000 masks are packed into smaller packets each contains 10 masks. MUST > 0 and is a divisible of total number.]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UID" id="D6EAC488-65F9-96B3-D1F4-02FC294E1798">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:01:14 UTC</createdTime>
+<generatorID>62A23836-3969-D79E-BC25-17C30348D57D</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D601D5C7-B367-5E90-74DD-FB466A1B11FF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attribute_2" id="1153A4F7-D2B7-0CC2-B8BA-918A38575805">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:04:17 UTC</createdTime>
+<generatorID>384ECABE-85AB-FFF9-CFA5-AD5AA2D51064</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<referedAttribute>EADF17B2-A8C8-C56D-DD51-73D30CCBABF1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ADFF23F1-BCA0-46C5-F67B-B885F970BE87" name="SUPPLY PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:06:19 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>543FA56E-73B3-9259-BECB-A9C6A2D44BEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

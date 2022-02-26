@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SUPPLY_BATCH" directorySegmentName="seg_0" id="53792092-E37A-CE1C-69BA-73365CD57500">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:01:33 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<sourcePk>ADFF23F1-BCA0-46C5-F67B-B885F970BE87</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5566A24-1911-0040-F900-C0FC48F964D0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F5B10B87-A565-40A8-3565-D8933ECC117C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

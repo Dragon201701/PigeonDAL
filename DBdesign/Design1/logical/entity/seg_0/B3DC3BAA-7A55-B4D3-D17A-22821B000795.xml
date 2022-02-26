@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B3DC3BAA-7A55-B4D3-D17A-22821B000795" name="SHIPMENT">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:30:47 UTC</createdTime>
+<comment><![CDATA[Each shipment can contain multiple ]]></comment>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>SHIPMENT</preferredAbbreviation>
+<shortName>SHIPMENT</shortName>
+<synonym>SHIPMENT</synonym>
+<synonymToDisplay>SHIPMENT</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SID" id="FFAFB35B-CF7A-42D9-970E-3C1005C003B5">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:31:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Shipment/Package ID.]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STYPE" id="6B24DA75-7FAF-B03D-A2C8-AEC377D0644F">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:41:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[0 - Ground
+1 - Air
+2 - Sea]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AD8EF5FA-D545-CD70-211F-B786DF129F1F" name="SHIPMENT PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:31:34 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FFAFB35B-CF7A-42D9-970E-3C1005C003B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

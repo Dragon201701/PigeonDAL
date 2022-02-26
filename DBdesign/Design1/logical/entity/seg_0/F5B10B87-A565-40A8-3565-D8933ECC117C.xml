@@ -1,0 +1,207 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5B10B87-A565-40A8-3565-D8933ECC117C" name="BATCH">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:18:41 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>BATCH</preferredAbbreviation>
+<shortName>BATCH</shortName>
+<synonym>BATCH</synonym>
+<synonymToDisplay>BATCH</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BID" id="325B6DBE-607E-E875-8083-30BE60E6684F">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:58:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Batch ID]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BNUM" id="7C95A999-1C7A-DCE0-7E40-CA4DFD4CD044">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:19:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Batch number]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BSTATUS" id="DB83937B-0B03-7A3B-B303-003FAAB49FC1">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:26:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[0 - In warehouse
+1 - In transit
+2 - arrived
+]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BTRACK" id="DF0C7435-CB60-E373-3B66-4F018BE52E40">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:28:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tracking number]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DID" id="6EA4E52C-C715-BE13-B7C4-CADD7D2E3AD9">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:01:33 UTC</createdTime>
+<generatorID>53792092-E37A-CE1C-69BA-73365CD57500</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>543FA56E-73B3-9259-BECB-A9C6A2D44BEB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CID" id="B92664D9-09EA-C909-AC20-B3C1453E43EA">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:05:48 UTC</createdTime>
+<generatorID>42AAEE8F-B185-71A4-D430-45AABB3FFDEC</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9E88DEDB-343B-1C0A-2850-DC1744CF7CAA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WID" id="773A3091-60B3-D68D-DC77-8923BF26A5F9">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:10:01 UTC</createdTime>
+<generatorID>57D3E2CA-0F7D-B820-8621-E12A4461A566</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5AECCB28-F534-9FCA-6DE4-740899A75158</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MID" id="C6C60431-AA04-FEEF-F94B-C8DED5D80480">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:35:39 UTC</createdTime>
+<generatorID>D6D74D4C-826A-B47E-4398-5D11EA1A8CEF</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>556C4DBD-6F37-AC42-3217-82662F5100B7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PID" id="21E2E74F-F6FB-3C01-6EA8-3894D681E16F">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:36:03 UTC</createdTime>
+<generatorID>C5A4D724-C855-98B9-18F1-F93AB8FFCCB9</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>539BE092-5922-44E9-A5B5-4B1965FC7843</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SID" id="53F27F6A-8039-8119-3B27-EC43AE03F815">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:41:36 UTC</createdTime>
+<generatorID>BA49B1D8-FC9A-4E12-3273-A1EB47A2676A</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<referedAttribute>FFAFB35B-CF7A-42D9-970E-3C1005C003B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RID" id="A3B168A1-CB68-2693-B89E-DB2847835170">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:53:08 UTC</createdTime>
+<generatorID>A4F177CB-C0B2-106C-F4FB-E6DFBA7AC16D</generatorID>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>31480012-7246-497D-2E45-266951E49906</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="91A7E5D2-F389-CC14-3FFB-BA4AC9EB5938" name="BATCH PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:51:23 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>325B6DBE-607E-E875-8083-30BE60E6684F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

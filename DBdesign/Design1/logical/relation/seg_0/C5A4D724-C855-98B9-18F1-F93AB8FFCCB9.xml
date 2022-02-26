@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRODUCT_BATCH" directorySegmentName="seg_0" id="C5A4D724-C855-98B9-18F1-F93AB8FFCCB9">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:36:03 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<sourcePk>E29454D4-61A6-ECC1-18A2-54A4839C91F1</sourcePk>
+<targetPk>91A7E5D2-F389-CC14-3FFB-BA4AC9EB5938</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4CADA9D9-5B3D-C74F-EE70-2BA79636FC50</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F5B10B87-A565-40A8-3565-D8933ECC117C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C783AF45-7865-AD4F-0404-C91DA27484EA" name="WAREHOUSE">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:06:26 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>WAREHOUSE</preferredAbbreviation>
+<shortName>WAREHOUSE</shortName>
+<synonym>WAREHOUSE</synonym>
+<synonymToDisplay>WAREHOUSE</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="WID" id="5AECCB28-F534-9FCA-6DE4-740899A75158">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:06:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Warehouse ID]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WADDR1" id="7E43AC55-9E5B-34E7-3945-03591D343082">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:07:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Warehouse address line 1]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WADDR2" id="24D5C6E7-9092-D1E5-9F48-A8F688F0F0B3">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:07:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Warehouse address line 2]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WCITY" id="2442B925-2589-B4C1-7C6C-9E501C007114">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:06:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Warehouse City]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WSTATE" id="729BD5B2-1450-D84A-CE4B-CE4901CF6374">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:07:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Warehouse State/Provience]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WCOUNTRY" id="F0C4DEF3-79F6-AF3A-FBAF-3E31FF503825">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:08:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Warehouse Country]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WZIP" id="0A21EEB2-B40D-D40C-6C68-D75FA26EFB63">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:09:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Warehouse zip code]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BA3F7600-2A3F-D0BC-0524-7B4CED6DA44D" name="WAREHOUSE PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 08:06:46 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5AECCB28-F534-9FCA-6DE4-740899A75158</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

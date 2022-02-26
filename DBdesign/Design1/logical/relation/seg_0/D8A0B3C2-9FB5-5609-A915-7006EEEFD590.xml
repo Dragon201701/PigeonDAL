@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="USER_REQUEST" directorySegmentName="seg_0" id="D8A0B3C2-9FB5-5609-A915-7006EEEFD590">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 17:52:14 UTC</createdTime>
+<comment><![CDATA[User can request multiple different kinds of supplies]]></comment>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<sourcePk>0E2EEB05-348F-68DF-5837-479D1AD9FA32</sourcePk>
+<targetPk>B23BAE2A-B0ED-FD01-8675-992B3603064F</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>55A742E5-9188-8569-16F9-A3FEFEFFAF1E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>82DC2FC1-FA74-218B-D594-7678CBA43740</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="55A742E5-9188-8569-16F9-A3FEFEFFAF1E" name="USER">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:00:37 UTC</createdTime>
+<comment><![CDATA[User Profile stored in Firestore NoSQL]]></comment>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>USER</preferredAbbreviation>
+<shortName>USER</shortName>
+<synonym>USER</synonym>
+<synonymToDisplay>USER</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="UID" id="D601D5C7-B367-5E90-74DD-FB466A1B11FF">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:01:07 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UFNAME" id="3AA5BCB3-0409-E290-9A69-CFACD41BEF5E">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:01:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[User's first name]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ULNAME" id="504DC9F4-9196-9853-CF9C-2C7250E8D705">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:02:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[User's last name]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USEX" id="264393DC-9A2A-AB22-3702-A6FBB0C6E768">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:02:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Male - 1 Female 0]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UEMAIL" id="37D9474A-83A2-78E0-DF63-E68961571C22">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:03:41 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UTYPE" id="291B9472-6131-7192-B65E-82C8F39C7F2C">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:40:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[0 - Super Admin
+1 - Warehouse Admin
+2 - Regional Admin
+1 - general user
+... TODO]]></commentInRDBMS>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E2EEB05-348F-68DF-5837-479D1AD9FA32" name="USER PK">
+<createdBy>yz-li</createdBy>
+<createdTime>2022-02-26 07:01:30 UTC</createdTime>
+<ownerDesignName>Design1</ownerDesignName>
+<engineerTo>
+<item key="F61704CA-F1A5-1D95-0751-E2AA3EFB4EED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D601D5C7-B367-5E90-74DD-FB466A1B11FF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
