@@ -12,6 +12,7 @@ import { ProFormCaptcha, ProFormCheckbox, ProFormText, LoginForm } from '@ant-de
 import { useIntl, history, FormattedMessage, SelectLang, useModel } from 'umi';
 import Footer from '@/components/Footer';
 import { login } from '@/services/ant-design-pro/api';
+import { firebase_login } from '@/services/ant-design-pro/cloud';
 import { getFakeCaptcha } from '@/services/ant-design-pro/login';
 
 import styles from './index.less';
@@ -38,6 +39,7 @@ const Login: React.FC = () => {
 
   const fetchUserInfo = async () => {
     const userInfo = await initialState?.fetchUserInfo?.();
+    console.log('UserInfo: ', userInfo);
     if (userInfo) {
       await setInitialState((s) => ({
         ...s,
@@ -49,7 +51,8 @@ const Login: React.FC = () => {
   const handleSubmit = async (values: API.LoginParams) => {
     try {
       // 登录
-      const msg = await login({ ...values, type });
+      console.log('登录：', values); // username, password
+      const msg = await firebase_login({ ...values, type });
       if (msg.status === 'ok') {
         const defaultLoginSuccessMessage = intl.formatMessage({
           id: 'pages.login.success',

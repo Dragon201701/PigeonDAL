@@ -1,6 +1,7 @@
 export default [
   {
     name: 'Welcome',
+    layout: false,
     icon: 'smile',
     path: '/welcome',
     component: './Welcome',

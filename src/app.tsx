@@ -6,6 +6,7 @@ import { history, Link } from 'umi';
 import RightContent from '@/components/RightContent';
 import Footer from '@/components/Footer';
 import { currentUser as queryCurrentUser } from './services/ant-design-pro/api';
+import { firebase_currentUser } from './services/ant-design-pro/cloud';
 import { BookOutlined, LinkOutlined } from '@ant-design/icons';
 import defaultSettings from '../config/defaultSettings';
 
@@ -22,13 +23,13 @@ export const initialStateConfig = {
  * */
 export async function getInitialState(): Promise<{
   settings?: Partial<LayoutSettings>;
-  currentUser?: API.CurrentUser;
+  currentUser?: API.CloudUser;
   loading?: boolean;
-  fetchUserInfo?: () => Promise<API.CurrentUser | undefined>;
+  fetchUserInfo?: () => Promise<API.CloudUser | undefined>;
 }> {
   const fetchUserInfo = async () => {
     try {
-      const msg = await queryCurrentUser();
+      const msg = await firebase_currentUser();
       return msg.data;
     } catch (error) {
       history.push(loginPath);
